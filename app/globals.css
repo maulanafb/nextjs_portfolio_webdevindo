@@ -2,3 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+.red_line a.active {
+position: relative;
+}
+.red_line a.active::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color:  red;
+}
+
+.title-section {
+  @apply text-[45px] leading-[50px] font-bold text-center 
+}
+p {
+  @apply mb-5
+}
+p:last-child {
+  @apply mb-0 text-[16px] lg:text-[22px]
+}
+
+.list-about-us li{
+  @apply mb-4 text-[16px] lg:text-[18px]
+}
+
+.list-about-us li:last-child{
+  @apply mb-0
+}
