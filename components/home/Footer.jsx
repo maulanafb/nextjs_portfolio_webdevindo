@@ -4,9 +4,9 @@ import { socialMedia } from '@/data/socialMedia'
 import Link from 'next/link'
 const Footer = () => {
     return (
-        <div className='container mx-auto px-[106px] py-10'>
-            <div className='flex justify-between'>
-                <div>webdevindo©Copyright 2023</div>
+        <div className='container mx-auto px-[70px] py-10 '>
+            <div className='flex flex-col lg:flex-row justify-between items-center'>
+                <div className='mb-4'>webdevindo©Copyright 2023</div>
                 <div className='flex flex-row gap-4'>
                     {socialMedia.map((soc, i) => {
                         return <Link key={i} href={soc.url}>
